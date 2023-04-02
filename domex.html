@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="hh" id="id_h1">Dom method</h1>
+    <ul>
+        <li>document.getElementById()</li>
+        <li>document.getElementsByTagName()</li>
+        <li class="hh">document.getElementsByClassName()</li>
+        <li>document.querySelector()</li>
+        <li>document.querySelectorAll()</li>
+    </ul>
+    <button onclick="fun()">change</button>
+    <script>
+        var h=document.querySelectorAll("li")
+        console.log(h)
+        // var h=document.getElementsByClassName("hh")
+        // console.log(h)
+         Array.from(h).map(item=>item.style.color="blue")
+    // h.style.backgroundColor="pink"
+    //    h.style.color="blue"
+    //    h.innerHTML="Welcome to my world</i>"
+    // function fun(){
+    //   document.getElementById("id_h1").style.color='red'
+    // }
+    </script>
+</body>
+</html>
